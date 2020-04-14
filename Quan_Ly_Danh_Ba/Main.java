@@ -5,29 +5,40 @@ import java.util.Scanner;
 
 public class Main {
 	static ContactList contactlist = new ContactList();
-	static Scanner input = new Scanner(System.in);
-	static String name, phone;
-
+//	static Scanner input = new Scanner(System.in);
+//	static String name, phone;
+	private static  String inputString() {
+		Scanner input = new Scanner(System.in);
+		String inputs = input.nextLine();
+		return inputs;
+	}
+	private static  int inputInteger() {
+		Scanner input = new Scanner(System.in);
+		int inputs = input.nextInt();
+		return inputs;
+	}
 	private static void searchPhone() {
 		System.out.println("Moi ban nhap ten nguoi dung    : ");
-		name = input.next();
+		String name = inputString();
 		contactlist.searchPhone(name);
 	}
 
 	private static void addPhone() {
 		System.out.println("Moi nhap ten nguoi dung : ");
-		 name = input.nextLine();
+		
+		String name = inputString();
+		
 		System.out.println("Moi ban nhap so dien thoai moi : ");
 
-		 phone = input.next();
+		String phone = inputString();
 		contactlist.addPhone(name, phone);
 	}
 
 	private static void updatePhone() {
 		System.out.println("Moi ban nhap ten nguoi dung    : ");
-		name = input.next();
+		String  name = inputString();
 		System.out.println("Moi ban nhap so dien thoai moi : ");
-		phone = input.next();
+		String phone = inputString();
 		contactlist.updatePhone(name, phone);
 	}
 
@@ -37,7 +48,7 @@ public class Main {
 
 	private static void removePhone() {
 		System.out.println("Moi ban nhap ten nguoi dung muon xoa :");
-		name = input.next();
+		String name = inputString();
 		contactlist.removePhone(name);
 	}
 
@@ -51,7 +62,7 @@ public class Main {
 		menu();
 		while (true) {
 			System.out.println("Moi ban chon 1 muc: ");
-			choice = input.nextInt();
+			choice = inputInteger();
 //			input.nextInt();
 			switch (choice) {
 			case 1: {

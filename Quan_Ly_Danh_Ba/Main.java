@@ -61,35 +61,40 @@ public class Main {
 		int choice;
 		menu();
 		while (true) {
-			System.out.println("Moi ban chon 1 muc: ");
-			choice = inputInteger();
-//			input.nextInt();
-			switch (choice) {
-			case 1: {
-				addPhone();
-				break;
-			}
-			case 2: {
+			try {
+				System.out.println("Moi ban chon 1 muc: ");
+				choice = inputInteger();
+//				input.nextInt();
+				switch (choice) {
+				case 1: {
+					addPhone();
+					break;
+				}
+				case 2: {
 
-				removePhone();
-				break;
-			}
-			case 3: {
-				updatePhone();
-				break;
-			}
-			case 4: {
-				searchPhone();
-				break;
+					removePhone();
+					break;
+				}
+				case 3: {
+					updatePhone();
+					break;
+				}
+				case 4: {
+					searchPhone();
+					break;
 
-			}
-			case 5: {
-				Print();
-				break;
-			}
-			case 6:
-				return;
+				}
+				case 5: {
+					Print();
+					break;
+				}
+				case 6:
+					return;
 
+				}
+			} catch (Exception e) {
+				System.out.println("co lo");
+				e.printStackTrace();
 			}
 
 		}

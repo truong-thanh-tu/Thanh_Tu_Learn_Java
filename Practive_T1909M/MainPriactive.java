@@ -90,14 +90,15 @@ public class MainPriactive {
 				System.out.println("Phone : ");
 				String phone = inputString();
 				addStudent(masv, tensv, diachi, phone);
-				
+				break;
 			}
 			case 2: {
 				displayStudent();
-				
+				break;
 			}
 			case 3:{
 				SeveStudent();
+				break;
 			}
 			case 4:{
 				break;

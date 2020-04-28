@@ -1,0 +1,16 @@
+CREATE DATABASE QLSV;
+USE DATABASE QLSV;
+CREATE TABLE SINHVIEN(
+ MASV VARCHAR(6) NOT NULL,
+ TENSV VARCHAR(50),
+ DIACHIA VARCHAR(50),
+ PHONE VARCHAR(9)
+);
+insert into SINHVIEN values('KH0102','Nguyen Van A','731 Tran Hung Dao, Q5, TpHCM','035661215' );
+insert into SINHVIEN values('KH0203','Tran Ngoc Han','23/5 Nguyen Trai, Q5, TpHCM','908256478');
+insert into SINHVIEN values('KH0504','Le Nhat Minh','34 Truong Dinh, Q3, TpHCM','8246108');
+insert into SINHVIEN values('KH0605','Le Hoai Thuong','227 Nguyen Van Cu, Q5, TpHCM','8631738',);
+insert into SINHVIEN values('KH0706','Nguyen Van Tam','32/3 Tran Binh Trong, Q5, TpHCM','916783565');
+insert into SINHVIEN values('KH0807','Phan Thi Thanh','45/2 An Duong Vuong, Q5, TpHCM','938435756');
+insert into SINHVIEN values('KH0908','Le Ha Vinh','873 Le Hong Phong, Q5, TpHCM','8654763');
+insert into SINHVIEN values('KH1009','Ha Duy Lap','34/34B Nguyen Trai, Q1, TpHCM','8768904');
